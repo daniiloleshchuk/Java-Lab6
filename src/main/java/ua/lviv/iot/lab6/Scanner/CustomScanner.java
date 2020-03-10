@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class CustomScanner {
 
-    public String scanString(){
+    public final String scanString() {
         System.out.println("Enter your String");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
-    public int scanInt(){
+    public final int scanInt() {
         System.out.println("Enter your int");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
