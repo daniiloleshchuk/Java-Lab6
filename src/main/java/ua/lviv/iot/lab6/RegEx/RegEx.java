@@ -20,11 +20,6 @@ public abstract class RegEx {
         Pattern pattern = Pattern.compile(patternString);
         Matcher matcher = pattern.matcher(textToCheck);
         while (matcher.find()) {
-            /*
-            if (!foundStrings.contains(matcher.group())){
-                foundStrings.add(matcher.group());
-            }
-             */
             foundStrings.add(matcher.group());
         }
         return foundStrings.toString();
