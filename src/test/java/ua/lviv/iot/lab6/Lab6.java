@@ -1,14 +1,10 @@
 package ua.lviv.iot.lab6;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ua.lviv.iot.lab6.RegEx.RegEx;
-import ua.lviv.iot.lab6.Scanner.CustomScanner;
 
 import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Lab6 {
@@ -16,7 +12,6 @@ public class Lab6 {
     public void lab6WithScannerViaTest() {
         //System.out.println("Enter number");
         //Scanner scannerForInt = new Scanner(new InputStreamReader(System.in));
-
         String numberInput = "3";
         InputStream inputStreamForInt = new ByteArrayInputStream(numberInput.getBytes());
         System.setIn(inputStreamForInt);
